@@ -75,6 +75,49 @@ body {
     color: #204d74;
   }
   
+  .carousel-container {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  #prevBtn,
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #prevBtn {
+    left: 0;
+  }
+  
+  #nextBtn {
+    right: 0;
+  }
+  
+
+
   /* Custom font styles */
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
   
