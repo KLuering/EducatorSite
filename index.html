@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>My Home Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <h1>My Home Page</h1>
+    <h1>My Website</h1>
     <nav>
       <ul>
+        <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Resume</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
-  
+
   <main>
+    <h2>Welcome to my website!</h2>
     <div class="carousel-container">
-      <div class="carousel-slide">
-        <img src="https://via.placeholder.com/500x300?text=Slide%201">
-      </div>
-      <div class="carousel-slide">
-        <img src="https://via.placeholder.com/500x300?text=Slide%202">
-      </div>
-      <div class="carousel-slide">
-        <img src="https://via.placeholder.com/500x300?text=Slide%203">
-      </div>
-      <button id="prevBtn">Prev</button>
-      <button id="nextBtn">Next</button>
+      <img class="carousel-slide active" src="https://picsum.photos/id/1/500/300" alt="Slide 1">
+      <img class="carousel-slide" src="https://picsum.photos/id/2/500/300" alt="Slide 2">
+      <img class="carousel-slide" src="https://picsum.photos/id/3/500/300" alt="Slide 3">
     </div>
-    
-    
-    <h2>Welcome to my home page!</h2>
-    <p>Hi there! My name is [Your Name] and this is my home page. I am a [Your Profession] with [Number] years of experience in [Your Area of Expertise]. Please feel free to take a look at my resume and portfolio to learn more about my skills and experience.</p>
-    <p>Thanks for visiting!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ultricies eros. Integer elementum
+      velit sed mi aliquet, ut varius erat molestie. Sed vel tempor ex. Nam euismod finibus metus a hendrerit. Proin
+      volutpat felis et dui tristique, eget dapibus purus aliquet. Duis sed arcu eu metus vehicula congue.</p>
   </main>
-  
+
   <footer>
-    <p>Copyright &copy; [Year] [Your Name]</p>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
   </footer>
-  
-  <script src="Photos.js"></script>
+
+  <button id="prevBtn" aria-label="Previous slide">&lt;</button>
+  <button id="nextBtn" aria-label="Next slide">&gt;</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
